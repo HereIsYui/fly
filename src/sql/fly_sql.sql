@@ -18,7 +18,7 @@ SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
--- Table structure for exchange_code
+-- Table structure for exchange_code 卡密
 -- ----------------------------
 DROP TABLE IF EXISTS `exchange_code`;
 CREATE TABLE `exchange_code`  (
@@ -36,7 +36,7 @@ CREATE TABLE `exchange_code`  (
 ) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
--- Table structure for exchange_record
+-- Table structure for exchange_record 卡密使用记录
 -- ----------------------------
 DROP TABLE IF EXISTS `exchange_record`;
 CREATE TABLE `exchange_record`  (

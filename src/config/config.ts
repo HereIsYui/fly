@@ -1,8 +1,14 @@
+/**
+ * 配置文件
+ * Author：Yui
+ * Create time：2022年08月15日
+ * Modified on：2023年03月06日
+ */
 import { resolve } from 'path';
 
 export const config = {
     // 开服时间
-    GAME_START_TIME: 1659944183000,
+    GAME_START_TIME: 1678070040572,
     // 日志控制台打印开关
     LOG_PRINT_POWER: true,
     // 日志文件记录开关
