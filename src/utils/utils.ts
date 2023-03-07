@@ -1,8 +1,8 @@
 /**
  * Name：公用函数库
  * Author：Yui
- * Create time：2022年8月8日
- * Modified on：2022年8月8日
+ * Create time：2022年08月08日
+ * Modified on：2022年08月08日
  */
 import { config } from '../config/config'
 import { accessSync, constants, mkdirSync, appendFileSync } from 'fs';

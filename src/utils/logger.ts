@@ -1,8 +1,8 @@
 /**
  * Name：日志模块
  * Author：Yui
- * Create time：2022年8月8日
- * Modified on：2022年8月8日
+ * Create time：2022年08月08日
+ * Modified on：2022年08月08日
  */
 import Colors = require('colors.ts');
 import { config } from "../config/config";
