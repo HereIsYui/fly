@@ -12,3 +12,6 @@ export interface GDData {
     growth_time?: number, // 灵药种子的生长最短时间 单位秒 每超出一倍时间 品级上升一级 最高到极品 
 
 }
+export interface myGoods {
+    [key: string]: GDData
+}
