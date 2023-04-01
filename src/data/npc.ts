@@ -2,20 +2,22 @@
  * NPC信息
  * Author：Yui
  * Create time：2022年08月15日
- * Modified on：2023年03月06日
- * Tips：仅作为示例 最终保存到数据库中
+ * Modified on：2023年04月01日
  */
-import { NPCData } from "../types/index";
+import { Npc } from "../types/index";
 
-const N0001: NPCData = {
-  id: 1,
-  name: "string",
-  map: "string",
-  task: "0|1|2",
-  fav: true,
-  talk: "0|1|2",
-  detail: "string",
-  lv: 0,
-  lvFilter: "string",
-  post: "string",
+export const NPCLIST: Npc = {
+  N0001: {
+    id: 1,
+    name: "王大娘",
+    map: "M001",
+    task: "",
+    hasFav: true,
+    fav: 0,
+    talk: "TK00001|TK00002",
+    detail: "王大娘做饭贼好吃，特别是红烧肉，村里一绝。",
+    lv: 0,
+    lvFilter: "麻瓜",
+    post: "就是一个普通的NPC",
+  },
 };
