@@ -44,6 +44,33 @@ export const GOODLIST: Goods = {
     level: 3,
     desc: "极品灵石，非常稀有，100上品灵石可兑换1极品灵石",
   },
+  GD00005: {
+    id: 5,
+    name: "机缘",
+    type: 0,
+    price: 0,
+    sell_price: 0,
+    level: 4,
+    desc: "特殊道具，可用来开辟药园或购买兽食以及天道阁抽奖",
+  },
+  GD00006: {
+    id: 6,
+    name: "天命",
+    type: 0,
+    price: 0,
+    sell_price: 0,
+    level: 5,
+    desc: "特殊道具，不可直接获得，1天命可兑换2机缘",
+  },
+  GD00007: {
+    id: 7,
+    name: "鸿蒙造化玉",
+    type: 0,
+    price: 0,
+    sell_price: 0,
+    level: 6,
+    desc: "特殊道具，用于升级造化至宝",
+  },
   // 灵药
   GD10000: {
     id: 10000,

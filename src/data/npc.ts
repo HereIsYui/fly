@@ -10,14 +10,13 @@ export const NPCLIST: Npc = {
   N0001: {
     id: 1,
     name: "王大娘",
-    map: "M001",
     task: "",
-    hasFav: true,
+    has_fav: true,
     fav: 0,
     talk: "TK00001|TK00002",
     detail: "王大娘做饭贼好吃，特别是红烧肉，村里一绝。",
     lv: 0,
-    lvFilter: "麻瓜",
+    lv_filter: "麻瓜",
     post: "就是一个普通的NPC",
   },
 };
