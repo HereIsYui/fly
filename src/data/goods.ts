@@ -4,10 +4,10 @@
  * Create time：2023年03月30日
  * Modified on：2023年03月30日
  */
-import { myGoods } from "./goods_type"
+import { Goods } from "../types/index"
 
 
-export const GOODLIST: myGoods = {
+export const GOODLIST: Goods = {
     // 灵石
     GD00001: {
         id: 1,
