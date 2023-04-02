@@ -45,10 +45,36 @@ export interface Npc {
   [key: string]: NPCData;
 }
 
-export interface onlineQueue {
+// 队列相关
+export interface OnlineQueue {
   [key: string]: any
 }
 
-export interface MyObject {
-  [key: string]: any
+export interface InteractQueue {
+  uid: string,
+  join_time: number
+}
+export interface JoinVipQueue {
+  uid: string,
+  vip_level: number
+}
+export interface MsgQueue {
+  uid: string,
+  message: string
+}
+
+// 玩家相关
+export interface Bag {
+  id: string, // 物品id
+  num: number // 物品数量
+}
+
+export interface Farm {
+  own: number, // 已解锁的土地
+  list: FarmItem[] // 种植物品列表
+}
+export interface FarmItem {
+  id: string, // 土地id
+  good_id: string, // 种植的物品id
+  sowing_time: number // 种植的时间
 }
