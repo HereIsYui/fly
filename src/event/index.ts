@@ -8,6 +8,7 @@ import { GOODLIST } from "../data/goods";
 import { User } from "./user";
 import { online_queue, fight_queue, sleep_queue } from "./queue";
 import { FarmItem } from "../types/index";
+import dayjs from "dayjs";
 
 // 玩家开始游戏
 export const startGame = function (uid: string, uname: string) {
@@ -21,7 +22,7 @@ export const userFight = function (uid: string, uname: string) {
     if (online_queue[uname].is_busy) {
         return '已经在历练了'
     } else {
-        fight_queue.push({ uid, join_time: new Date().getTime() });
+        fight_queue.push({ uid, join_time: dayjs().valueOf() });
         online_queue[uname].is_busy = true;
         return '已开始历练'
     }
@@ -32,7 +33,7 @@ export const userSleep = function (uid: string, uname: string) {
     if (sleep_queue.find(e => { return e.uid === uid })) {
         return '已经开始修炼了'
     } else {
-        sleep_queue.push({ uid, join_time: new Date().getTime() })
+        sleep_queue.push({ uid, join_time: dayjs().valueOf() })
         return '已开始修炼'
     }
 }
@@ -46,7 +47,7 @@ export const userSowing = function (uid: string, uname: string, farmId: string, 
             return '该土地已种植'
         } else {
             farmData.good_id = goodId;
-            farmData.sowing_time = new Date().getTime();
+            farmData.sowing_time = dayjs().valueOf();
             return '种植成功'
         }
     } else {
