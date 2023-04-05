@@ -2,10 +2,10 @@
 export interface GDData {
   id: number; // 物品id
   name: string; // 物品名称
-  type: number; // 物品分类 0货币 1灵药 2灵药种子 3丹药 4装备 5道具[道具需要机缘or天命购买] 6功法
+  type: number; // 物品分类 0货币 1灵药 2灵药种子 3丹药 4装备 5道具[道具需要机缘or天命购买] 6功法 7材料
   price: number; // 物品价格-购买
   sell_price: number; // 物品价格-卖出
-  level: number; // 物品品级
+  level: number; // 物品品级 0普通 1中品 2上品 3极品 4神品
   desc: string; // 物品描述
   exp_add?: number; // 增加的经验
   golds_add?: number; // 增加的货币
