@@ -4,7 +4,7 @@
  * Create time：2023年04月01日
  * Modified on：2023年04月02日
  */
-import { Farm, Bag } from "../types/index";
+import { Farm, Bag, Pet } from "../types/index";
 export class User {
     uid: string;
     uname: string;
@@ -17,6 +17,7 @@ export class User {
         own: 4, // 已解锁的
         list: []
     };
+    pet?: Pet;
     constructor(uid: string, uname: string) {
         this.uid = uid;
         this.uname = uname;
@@ -28,8 +29,5 @@ export class User {
         // 添加初始道具
         this.bag.push({ id: 'GB00001', num: 100 });
         return this
-    }
-    addExp(exp: number) {
-        this.exp = this.exp + Math.floor(exp);
     }
 }

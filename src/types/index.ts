@@ -78,3 +78,11 @@ export interface FarmItem {
   good_id: string, // 种植的物品id
   sowing_time: number // 种植的时间
 }
+export interface Pet {
+  id: string,  // 宠物id
+  name: string, // 宠物名称
+  nick_name: string, // 宠物昵称
+  level: number, // 宠物等级
+  hunger: number, // 饥饿值
+  fav: number, // 好感度
+}
